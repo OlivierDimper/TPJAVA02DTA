@@ -1,5 +1,6 @@
 package animal;
 
+import aliment.Aliment;
 import animal.regime.Regime;
 
 public abstract class Animal {
@@ -16,4 +17,18 @@ public abstract class Animal {
 		this.regime = regime;
 	}
 	
+	public void description() {
+		System.out.println("Bonjour, je suis un " + nom + ". Je pèse " + poids + " kgs, j'ai " + age + " ans et je mesure " + taille + " cm.");
+		System.out.println("Je suis un " + regime.getName());
+	}
+	public void manger(Aliment aliment) {
+		this.regime.manger(aliment);
+	}
+	public void manger(Animal animal) {
+		this.regime.manger(animal);
+	}
+
+	public String getNom() {
+		return nom;
+	}
 }

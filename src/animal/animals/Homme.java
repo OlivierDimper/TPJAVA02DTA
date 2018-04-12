@@ -1,10 +1,10 @@
 package animal.animals;
 
 import animal.Animal;
-import animal.regime.Regime;
+import animal.regime.Omnivore;
 
 public class Homme extends Animal{
-	public Homme(int age, int poids, int taille, String nom, Regime regime) {
-		super(age, poids, taille, nom, regime);
+	public Homme(int age, int poids, int taille) {
+		super(age, poids, taille, "Homme", new Omnivore());
 	}
 }

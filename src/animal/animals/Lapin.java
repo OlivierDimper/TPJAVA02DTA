@@ -1,10 +1,10 @@
 package animal.animals;
 
 import animal.Animal;
-import animal.regime.Regime;
+import animal.regime.Herbivore;
 
 public class Lapin extends Animal{
-	public Lapin(int age, int poids, int taille, String nom, Regime regime) {
-		super(age, poids, taille, nom, regime);
+	public Lapin(int age, int poids, int taille) {
+		super(age, poids, taille, "Lapin", new Herbivore());
 	}
 }
