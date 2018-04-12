@@ -21,11 +21,9 @@ public abstract class Animal {
 		System.out.println("Bonjour, je suis un " + nom + ". Je pèse " + poids + " kgs, j'ai " + age + " ans et je mesure " + taille + " cm.");
 		System.out.println("Je suis un " + regime.getName());
 	}
-	public void manger(Aliment aliment) {
+
+	public void manger(Aliment aliment) throws Exception {
 		this.regime.manger(aliment);
-	}
-	public void manger(Animal animal) {
-		this.regime.manger(animal);
 	}
 
 	public String getNom() {

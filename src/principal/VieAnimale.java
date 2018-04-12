@@ -1,23 +1,28 @@
 package principal;
 
-import aliment.Aliment;
+import aliment.Viande;
 import animal.animals.Homme;
 import animal.animals.Lapin;
 
 public class VieAnimale {
 
-	public static void main(String[] args) {
+	public static void main(String[] args)  {
 		Homme pierre = new Homme(18, 75, 130);
 		pierre.description();
 		
-		Aliment biche = new Aliment("Viande", "Biche");
-		pierre.manger(biche);
+		Viande biche = new Viande("Biche");
+		try {
+			pierre.manger(biche);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		Lapin panpan = new Lapin(4, 5, 20);
 		panpan.description();
 		
-		panpan.manger(biche);
+		//panpan.manger(biche);
 		
-		pierre.manger(panpan);
+		//pierre.manger(panpan);
 	}
 }

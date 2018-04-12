@@ -1,18 +1,12 @@
 package aliment;
 
-public class Aliment {
-	String type;
+public abstract class Aliment {
 	String name;
 
-	public Aliment(String type, String name) {
-		this.type = type;
+	public Aliment(String name) {
 		this.name = name;
 	}
 
-	public String getType() {
-		return type;
-	}
-	
 	public String getName() {
 		return name;
 	}
